@@ -52,7 +52,7 @@ export const Newsletter = () => {
         <Row>
           <Col lg={12} md={6} xl={5}>
             <h3>
-              Let’s Collaborate! <br /> Freelance Opportunities & Updates
+              Let’s Collaborate! <br /> Freelance Together...
             </h3>
           </Col>
           <Col md={6} xl={7}>
