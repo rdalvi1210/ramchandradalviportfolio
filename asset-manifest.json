@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/ramchandradalviportfolio/static/css/main.ac025f1f.css",
-    "main.js": "/ramchandradalviportfolio/static/js/main.7b184859.js",
+    "main.js": "/ramchandradalviportfolio/static/js/main.40fd4131.js",
     "static/js/787.fb771931.chunk.js": "/ramchandradalviportfolio/static/js/787.fb771931.chunk.js",
     "static/media/ecommerce.png": "/ramchandradalviportfolio/static/media/ecommerce.eaf685468402d8c79d63.png",
     "static/media/swiggy.png": "/ramchandradalviportfolio/static/media/swiggy.38451b9c2e3fa348b4dd.png",
@@ -11,7 +11,7 @@
     "static/media/twitter.png": "/ramchandradalviportfolio/static/media/twitter.1299ac0c2c2c309c35a4.png",
     "static/media/photo.png": "/ramchandradalviportfolio/static/media/photo.35c96bf99daca765dc9f.png",
     "static/media/banner-bg.png": "/ramchandradalviportfolio/static/media/banner-bg.cc1273af450504afe755.png",
-    "static/media/Ramchandra Dalvi.pdf": "/ramchandradalviportfolio/static/media/Ramchandra Dalvi.ffd810d661e0df4b74a3.pdf",
+    "static/media/Ram-mycv.pdf": "/ramchandradalviportfolio/static/media/Ram-mycv.527d86928a7f16011807.pdf",
     "static/media/CentraNo2-Bold.ttf": "/ramchandradalviportfolio/static/media/CentraNo2-Bold.2faff7f7d3fc92a2fcd9.ttf",
     "static/media/CentraNo2-Medium.ttf": "/ramchandradalviportfolio/static/media/CentraNo2-Medium.f94be5b326d78bb32b95.ttf",
     "static/media/CentraNo2-Book.ttf": "/ramchandradalviportfolio/static/media/CentraNo2-Book.2b143fa4b734a3584043.ttf",
@@ -28,11 +28,11 @@
     "index.html": "/ramchandradalviportfolio/index.html",
     "static/media/nav-icon1.svg": "/ramchandradalviportfolio/static/media/nav-icon1.721d5414c26365f117e71d46b6641cb2.svg",
     "main.ac025f1f.css.map": "/ramchandradalviportfolio/static/css/main.ac025f1f.css.map",
-    "main.7b184859.js.map": "/ramchandradalviportfolio/static/js/main.7b184859.js.map",
+    "main.40fd4131.js.map": "/ramchandradalviportfolio/static/js/main.40fd4131.js.map",
     "787.fb771931.chunk.js.map": "/ramchandradalviportfolio/static/js/787.fb771931.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.ac025f1f.css",
-    "static/js/main.7b184859.js"
+    "static/js/main.40fd4131.js"
   ]
 }
