@@ -4,7 +4,7 @@ import { Col, Container, Row } from "react-bootstrap";
 import { ArrowRightCircle } from "react-bootstrap-icons";
 import TrackVisibility from "react-on-screen";
 import photo from "../assets/img/photo.png";
-import resumePDF from "../assets/img/Ramchandra Dalvi.pdf";
+import resumePDF from "../assets/img/Ram-mycv.pdf";
 
 export const Banner = () => {
   const [loopNum, setLoopNum] = useState(0);
