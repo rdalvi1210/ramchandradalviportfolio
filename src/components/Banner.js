@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 import { Col, Container, Row } from "react-bootstrap";
 import { ArrowRightCircle } from "react-bootstrap-icons";
 import TrackVisibility from "react-on-screen";
-import headerImg from "../assets/img/header-img.svg";
+import photo from "../assets/img/photo.png";
 import resumePDF from "../assets/img/Ramchandra Dalvi.pdf";
 
 export const Banner = () => {
@@ -95,7 +95,7 @@ export const Banner = () => {
               )}
             </TrackVisibility>
           </Col>
-          <Col xs={12} md={6} xl={5}>
+          <Col xs={12} md={6} xl={4}>
             <TrackVisibility>
               {({ isVisible }) => (
                 <div
@@ -103,7 +103,7 @@ export const Banner = () => {
                     isVisible ? "animate__animated animate__zoomIn" : ""
                   }
                 >
-                  <img src={headerImg} alt="Header Img" />
+                  <img src={photo} alt="Header Img" />
                 </div>
               )}
             </TrackVisibility>
