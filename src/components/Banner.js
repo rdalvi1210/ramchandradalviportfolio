@@ -3,8 +3,14 @@ import { useEffect, useState } from "react";
 import { Col, Container, Row } from "react-bootstrap";
 import { ArrowRightCircle } from "react-bootstrap-icons";
 import TrackVisibility from "react-on-screen";
+import Angular from "../assets/img/angular.png";
+import Bootstrap from "../assets/img/bootstrap.jpg";
+import MongoDb from "../assets/img/mongodb.jpg";
+import Node from "../assets/img/node.jpg";
 import photo from "../assets/img/photo.png";
 import resumePDF from "../assets/img/Ram-mycv.pdf";
+import React from "../assets/img/react.jpg";
+import Tailwind from "../assets/img/tailwind.jpg";
 
 export const Banner = () => {
   const [loopNum, setLoopNum] = useState(0);
@@ -103,10 +109,44 @@ export const Banner = () => {
               {({ isVisible }) => (
                 <div
                   className={
-                    isVisible ? "animate__animated animate__zoomIn" : ""
+                    isVisible
+                      ? "animate__animated animate__zoomIn photo-container"
+                      : "photo-container"
                   }
                 >
-                  <img src={photo} alt="Header Img" />
+                  <img src={photo} alt="Header Img" className="profile-photo" />
+
+                  {/* Floating Skill Images */}
+                  <img
+                    src={Angular}
+                    alt="React"
+                    className="skill-icon skill-1"
+                  />
+                  <img
+                    src={React}
+                    alt="Node.js"
+                    className="skill-icon skill-2"
+                  />
+                  <img
+                    src={MongoDb}
+                    alt="MongoDB"
+                    className="skill-icon skill-3"
+                  />
+                  <img
+                    src={Node}
+                    alt="Express.js"
+                    className="skill-icon skill-4"
+                  />
+                  <img
+                    src={Tailwind}
+                    alt="Angular"
+                    className="skill-icon skill-5"
+                  />
+                  <img
+                    src={Bootstrap}
+                    alt="React Native"
+                    className="skill-icon skill-6"
+                  />
                 </div>
               )}
             </TrackVisibility>
