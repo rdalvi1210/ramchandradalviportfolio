@@ -80,11 +80,14 @@ export const Banner = () => {
                     </span>
                   </h1>
                   <p>
-                    I am a passionate MERN Stack Developer from India. I
-                    specialize in building responsive and user-friendly web
-                    applications using React.js, Node.js, Express.js, and
-                    MongoDB. I love creating seamless digital experiences and
-                    continuously improving my skills.
+                    I'm a MERN Stack Developer from India skilled in building
+                    responsive web apps with React.js, Node.js, Express.js, and
+                    MongoDB. I also have experience with Angular and React
+                    Native (Android). Currently, I'm interning as a Full Stack
+                    Developer at Unified Mentor Pvt Ltd, gaining hands-on
+                    experience with real projects. I'm passionate about clean
+                    code, continuous learning, and delivering smooth digital
+                    experiences.
                   </p>
                   <button>
                     <a href={resumePDF} download>

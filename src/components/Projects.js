@@ -114,8 +114,12 @@ export const Projects = () => {
 
                       <Tab.Pane eventKey="third">
                         <div className="custom-card">
-                          <h4>💼 My Freelance Experience</h4>
+                          <h4>💼 My Freelance & Internship Experience</h4>
                           <ul>
+                            <li>
+                              Currently, Full Stack Developer Intern at Unified
+                              Mentor Pvt. Ltd.
+                            </li>
                             <li>
                               Frontend Developer Intern in Thane (12 months)
                             </li>

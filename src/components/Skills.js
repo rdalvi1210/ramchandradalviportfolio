@@ -67,11 +67,11 @@ export const Skills = () => {
                   <h5>REST APIs</h5>
                 </div>
                 <div className="item">
-                  <img src={meter1} alt="Image" />
+                  <img src={meter2} alt="Image" />
                   <h5>Socket.io (Real-time Chat)</h5>
                 </div>
                 <div className="item">
-                  <img src={meter2} alt="Image" />
+                  <img src={meter1} alt="Image" />
                   <h5>Git & GitHub</h5>
                 </div>
                 <div className="item">
