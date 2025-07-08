@@ -8,8 +8,19 @@ export const ProjectCard = ({ title, description, imgUrl }) => {
         <div className="proj-txtx">
           <h4>{title}</h4>
           <span>{description}</span>
+          <br />
+          {title === "Text-Analyzer" ? (
+            <a
+              href="https://text-analyzer-pearl.vercel.app/"
+              className="btn btn-light my-2 "
+            >
+              Live Demo
+            </a>
+          ) : (
+            ""
+          )}
         </div>
       </div>
     </Col>
-  )
-}
+  );
+};

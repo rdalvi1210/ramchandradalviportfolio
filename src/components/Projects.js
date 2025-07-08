@@ -1,9 +1,12 @@
 import "animate.css";
 import { Col, Container, Nav, Row, Tab } from "react-bootstrap";
 import TrackVisibility from "react-on-screen";
+import projImg6 from "../assets/img/clinic.png";
 import colorSharp2 from "../assets/img/color-sharp2.png";
 import projImg2 from "../assets/img/ecommerce.png";
+import projImg7 from "../assets/img/newsapp.png";
 import projImg3 from "../assets/img/swiggy.png";
+import projImg5 from "../assets/img/textanalyzer.png";
 import projImg4 from "../assets/img/tutorial.png";
 import projImg1 from "../assets/img/twitter.png";
 import { ProjectCard } from "./ProjectCard";
@@ -28,10 +31,29 @@ export const Projects = () => {
       imgUrl: projImg3,
     },
     {
+      title: "Clinic_Management",
+      description:
+        "A full-stack system to manage patient data, appointments, and doctor dashboards.",
+      imgUrl: projImg6,
+    },
+
+    {
       title: "Kaivalya Infotech",
       description:
         "IT tutorial website With Admin Page (Fullstack) (React.js & Node.js & Mongo Db & Googlesheet)",
       imgUrl: projImg4,
+    },
+    {
+      title: "Text-Analyzer",
+      description:
+        "Text-Analyzer Website - word counter, character counter, remove extra spaces, preview and others (React.js & Modern Javascript)",
+      imgUrl: projImg5,
+    },
+    {
+      title: "NewsWeb",
+      description:
+        "A dynamic news application fetches real-time news articles. Features category filtering and responsive UI.",
+      imgUrl: projImg7,
     },
   ];
 
