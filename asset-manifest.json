@@ -1,13 +1,15 @@
 {
   "files": {
     "main.css": "/ramchandradalviportfolio/static/css/main.ecddd49d.css",
-    "main.js": "/ramchandradalviportfolio/static/js/main.a8af24f0.js",
+    "main.js": "/ramchandradalviportfolio/static/js/main.4dc1b7f6.js",
     "static/js/787.fb771931.chunk.js": "/ramchandradalviportfolio/static/js/787.fb771931.chunk.js",
     "static/media/ecommerce.png": "/ramchandradalviportfolio/static/media/ecommerce.eaf685468402d8c79d63.png",
     "static/media/swiggy.png": "/ramchandradalviportfolio/static/media/swiggy.38451b9c2e3fa348b4dd.png",
     "static/media/color-sharp.png": "/ramchandradalviportfolio/static/media/color-sharp.bea361cfef80fefc2d1e.png",
     "static/media/tutorial.png": "/ramchandradalviportfolio/static/media/tutorial.60271558e08a597b5006.png",
+    "static/media/newsapp.png": "/ramchandradalviportfolio/static/media/newsapp.fd06a488cc79e5a932fc.png",
     "static/media/color-sharp2.png": "/ramchandradalviportfolio/static/media/color-sharp2.c87586c6c2f549cb4aa6.png",
+    "static/media/clinic.png": "/ramchandradalviportfolio/static/media/clinic.4026893e36357c9891ef.png",
     "static/media/twitter.png": "/ramchandradalviportfolio/static/media/twitter.1299ac0c2c2c309c35a4.png",
     "static/media/photo.png": "/ramchandradalviportfolio/static/media/photo.35c96bf99daca765dc9f.png",
     "static/media/banner-bg.png": "/ramchandradalviportfolio/static/media/banner-bg.cc1273af450504afe755.png",
@@ -15,6 +17,7 @@
     "static/media/CentraNo2-Bold.ttf": "/ramchandradalviportfolio/static/media/CentraNo2-Bold.2faff7f7d3fc92a2fcd9.ttf",
     "static/media/CentraNo2-Medium.ttf": "/ramchandradalviportfolio/static/media/CentraNo2-Medium.f94be5b326d78bb32b95.ttf",
     "static/media/CentraNo2-Book.ttf": "/ramchandradalviportfolio/static/media/CentraNo2-Book.2b143fa4b734a3584043.ttf",
+    "static/media/textanalyzer.png": "/ramchandradalviportfolio/static/media/textanalyzer.64d4e7152b06e08d5473.png",
     "static/media/footer-bg.png": "/ramchandradalviportfolio/static/media/footer-bg.7bd67c0f73571d0acc02.png",
     "static/media/react.jpg": "/ramchandradalviportfolio/static/media/react.2e38b0b0f26db6da5863.jpg",
     "static/media/contact-img.svg": "/ramchandradalviportfolio/static/media/contact-img.87eac2b29352fa01abb2f9510ef6ac7e.svg",
@@ -30,11 +33,11 @@
     "index.html": "/ramchandradalviportfolio/index.html",
     "static/media/nav-icon1.svg": "/ramchandradalviportfolio/static/media/nav-icon1.721d5414c26365f117e71d46b6641cb2.svg",
     "main.ecddd49d.css.map": "/ramchandradalviportfolio/static/css/main.ecddd49d.css.map",
-    "main.a8af24f0.js.map": "/ramchandradalviportfolio/static/js/main.a8af24f0.js.map",
+    "main.4dc1b7f6.js.map": "/ramchandradalviportfolio/static/js/main.4dc1b7f6.js.map",
     "787.fb771931.chunk.js.map": "/ramchandradalviportfolio/static/js/787.fb771931.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.ecddd49d.css",
-    "static/js/main.a8af24f0.js"
+    "static/js/main.4dc1b7f6.js"
   ]
 }
