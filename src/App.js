@@ -8,8 +8,33 @@ import { Projects } from "./components/Projects";
 import { Skills } from "./components/Skills";
 
 import { Toaster } from "react-hot-toast";
+import { useState, useEffect } from "react";
 
 function App() {
+  const [showTopBtn, setShowTopBtn] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 300) {
+        setShowTopBtn(true);
+      } else {
+        setShowTopBtn(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    // Clean up the event listener on unmount
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  };
+
   return (
     <div className="App">
       <NavBar />
@@ -18,7 +43,17 @@ function App() {
       <Projects />
       <Contact />
       <Footer />
-      {/* Toaster for toast notifications, positioned center top */}
+
+      {showTopBtn && (
+        <button
+          onClick={scrollToTop}
+          className="go-to-top-btn"
+          aria-label="Go to top"
+        >
+          ↑
+        </button>
+      )}
+
       <Toaster
         position="top-center"
         reverseOrder={false}
