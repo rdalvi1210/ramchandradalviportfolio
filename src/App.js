@@ -7,8 +7,9 @@ import { NavBar } from "./components/NavBar";
 import { Projects } from "./components/Projects";
 import { Skills } from "./components/Skills";
 
+import { useEffect, useState } from "react";
 import { Toaster } from "react-hot-toast";
-import { useState, useEffect } from "react";
+import Client from "./components/Client";
 
 function App() {
   const [showTopBtn, setShowTopBtn] = useState(false);
@@ -40,6 +41,7 @@ function App() {
       <NavBar />
       <Banner />
       <Skills />
+      <Client />
       <Projects />
       <Contact />
       <Footer />

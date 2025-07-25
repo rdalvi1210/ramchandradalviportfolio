@@ -120,6 +120,43 @@ nav.navbar .navbar-nav a.nav-link.navbar-link:hover,
 nav.navbar .navbar-nav a.nav-link.navbar-link.active {
   opacity: 1;
 }
+
+/* Hide the navbar-collapse by default with off-screen left */
+.navbar-collapse {
+  position: fixed;
+  top: 56px; /* height of the navbar (adjust if different) */
+  left: 0;
+  width: 75vw; /* slide width on mobile */
+  height: 100vh;
+  background-color: #222; /* or your navbar bg color */
+  transform: translateX(-100%);
+  transition: transform 0.3s ease-in-out;
+  z-index: 1040; /* above other content */
+  padding: 1rem;
+  overflow-y: auto;
+}
+
+/* Show the collapse when expanded by sliding it in */
+.navbar-collapse.show {
+  transform: translateX(0);
+}
+
+/* Override the default backdrop (optional) to prevent closing on outside click */
+/* You can customize this if you want backdrop or dim effect */
+
+@media (min-width: 768px) {
+  /* Reset on desktop */
+  .navbar-collapse {
+    position: static !important;
+    width: auto !important;
+    height: auto !important;
+    background-color: transparent !important;
+    transform: none !important;
+    padding: 0 !important;
+    overflow: visible !important;
+  }
+}
+
 span.navbar-text {
   display: flex;
   align-items: center;
@@ -831,7 +868,6 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .project {
   padding: 80px 0;
   position: relative;
-  background-color: black;
 }
 .project h2 {
   font-size: 45px;
@@ -912,7 +948,6 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .proj-imgbx img {
   width: 100%;
   height: 100%;
-  object-fit: contain;
 }
 .proj-imgbx::before {
   content: "";
@@ -1385,4 +1420,58 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 
 .go-to-top-btn:hover {
   background-color: #93348b;
+}
+
+/* clients  */
+
+.client-container {
+  max-width: 600px;
+  margin: 50px auto;
+  text-align: center;
+  padding: 0 20px;
+}
+
+.client-title {
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+  font-weight: 700;
+  color: white;
+}
+
+.client-single {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+}
+
+.client-name {
+  font-size: 3rem;
+  font-weight: 900;
+  color: gray;
+  margin: 0;
+}
+
+.highlight {
+  color: orange;
+}
+
+.client-link {
+  font-size: 1.25rem;
+  color: #1a73e8;
+  text-decoration: underline;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.client-link:hover {
+  color: #0c47b7;
+}
+
+.custom-navbar-toggler {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  padding: 0.25rem 0.75rem;
 }

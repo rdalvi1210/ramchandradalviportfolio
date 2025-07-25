@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { Container, Nav, Navbar } from "react-bootstrap";
+import { List, X } from "react-bootstrap-icons"; // hamburger & cross icons
 import { BrowserRouter as Router } from "react-router-dom";
 import navIcon0 from "../assets/img/icons8-github (2).svg";
 import navIcon1 from "../assets/img/nav-icon1.svg";
@@ -8,19 +9,14 @@ import navIcon3 from "../assets/img/nav-icon3.svg";
 export const NavBar = () => {
   const [activeLink, setActiveLink] = useState("home");
   const [scrolled, setScrolled] = useState(false);
-  const [expanded, setExpanded] = useState(false); // to control navbar collapse
+  const [expanded, setExpanded] = useState(false);
 
   useEffect(() => {
     const onScroll = () => {
-      if (window.scrollY > 50) {
-        setScrolled(true);
-      } else {
-        setScrolled(false);
-      }
+      setScrolled(window.scrollY > 50);
     };
 
     window.addEventListener("scroll", onScroll);
-
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
 
@@ -40,9 +36,27 @@ export const NavBar = () => {
           <Navbar.Brand href="/">
             <h1 style={{ color: "white" }}>Ramchandra</h1>
           </Navbar.Brand>
-          <Navbar.Toggle aria-controls="basic-navbar-nav" />
+
+          {/* Custom toggle button */}
+          <button
+            aria-controls="basic-navbar-nav"
+            aria-expanded={expanded}
+            aria-label="Toggle navigation"
+            className="custom-navbar-toggler"
+            onClick={() => setExpanded(!expanded)}
+            style={{
+              background: "none",
+              border: "none",
+              color: "white",
+              fontSize: "1.8rem",
+            }}
+          >
+            {expanded ? <X /> : <List />}
+          </button>
+
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="ms-auto">
+              {/* Your Nav.Links here */}
               <Nav.Link
                 href="#home"
                 className={
@@ -50,11 +64,12 @@ export const NavBar = () => {
                 }
                 onClick={() => {
                   onUpdateActiveLink("home");
-                  setExpanded(false); // close menu on click
+                  setExpanded(false);
                 }}
               >
                 Home
               </Nav.Link>
+              {/* ... other links same as before */}
               <Nav.Link
                 href="#skills"
                 className={
@@ -108,6 +123,18 @@ export const NavBar = () => {
                 }}
               >
                 Experience
+              </Nav.Link>
+              <Nav.Link
+                href="#client"
+                className={
+                  activeLink === "client" ? "active navbar-link" : "navbar-link"
+                }
+                onClick={() => {
+                  onUpdateActiveLink("client");
+                  setExpanded(false);
+                }}
+              >
+                Client
               </Nav.Link>
               <Nav.Link
                 href="#connect"
