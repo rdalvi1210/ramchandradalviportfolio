@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { Container, Nav, Navbar } from "react-bootstrap";
-import { List, X } from "react-bootstrap-icons"; // hamburger & cross icons
+import { List, X } from "react-bootstrap-icons";
 import { BrowserRouter as Router } from "react-router-dom";
 import navIcon0 from "../assets/img/icons8-github (2).svg";
 import navIcon1 from "../assets/img/nav-icon1.svg";
@@ -37,26 +37,27 @@ export const NavBar = () => {
             <h1 style={{ color: "white" }}>Ramchandra</h1>
           </Navbar.Brand>
 
-          {/* Custom toggle button */}
-          <button
-            aria-controls="basic-navbar-nav"
-            aria-expanded={expanded}
-            aria-label="Toggle navigation"
-            className="custom-navbar-toggler"
-            onClick={() => setExpanded(!expanded)}
-            style={{
-              background: "none",
-              border: "none",
-              color: "white",
-              fontSize: "1.8rem",
-            }}
-          >
-            {expanded ? <X /> : <List />}
-          </button>
+          {/* Hamburger Button - visible only on mobile */}
+          <div className="d-md-none">
+            <button
+              aria-controls="basic-navbar-nav"
+              aria-expanded={expanded}
+              aria-label="Toggle navigation"
+              className="custom-navbar-toggler"
+              onClick={() => setExpanded(!expanded)}
+              style={{
+                background: "none",
+                border: "none",
+                color: "white",
+                fontSize: "1.8rem",
+              }}
+            >
+              {expanded ? <X /> : <List />}
+            </button>
+          </div>
 
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="ms-auto">
-              {/* Your Nav.Links here */}
               <Nav.Link
                 href="#home"
                 className={
@@ -69,7 +70,6 @@ export const NavBar = () => {
               >
                 Home
               </Nav.Link>
-              {/* ... other links same as before */}
               <Nav.Link
                 href="#skills"
                 className={
@@ -154,13 +154,13 @@ export const NavBar = () => {
             <span className="navbar-text">
               <div className="social-icon">
                 <a href="https://github.com/rdalvi1210">
-                  <img src={navIcon0} alt="" />
+                  <img src={navIcon0} alt="GitHub" />
                 </a>
                 <a href="https://www.linkedin.com/in/ramchandra-dalvi-002a5b363/">
-                  <img src={navIcon1} alt="" />
+                  <img src={navIcon1} alt="LinkedIn" />
                 </a>
                 <a href="https://www.instagram.com/_r_dalvi_1210/?next=%2F">
-                  <img src={navIcon3} alt="" />
+                  <img src={navIcon3} alt="Instagram" />
                 </a>
               </div>
             </span>
